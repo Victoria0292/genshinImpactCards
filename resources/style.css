@@ -2,25 +2,6 @@
     display: flex;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-    display: inline;
-    float: left;
-}
-
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
 .static {
     position:absolute;
     background: white;
