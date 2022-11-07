@@ -11,7 +11,7 @@ body {
   }
 
   .cardSection {
-    width: 600px;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     perspective: 800px;
