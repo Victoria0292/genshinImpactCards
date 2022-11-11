@@ -2,63 +2,64 @@
 inspiration*/
 
 body {
-    background: black;
-    color: white;
-  }
+  background: black;
+  color: white;
+}
 
-  a {
-    color: aqua;
-  }
+a {
+  color: aqua;
+}
 
-  .cardSection {
-    width: 1000px;
-    height: 425px;
-    display: flex;
-    justify-content: space-between;
-    perspective: 1000px;
-  }
-  
-    .card {
-      position: relative;
-      width: 240px;
-      height: 300px;
-      cursor: pointer;
-      transition: 1s ease-in-out;
-      transform-style: preserve-3d;
-    }
-  
-      .card:hover {
-        transform: rotateY(0.5turn);
-      }
-  
-      .cardSection .card .cardFront,
-      .cardSection .card .cardBack {
-        position: absolute;
-        width: 100%;
-        
-        backface-visibility: hidden;
-        transition: 1s ease-in-out;
-      }
-  
+.cardSection {
+  width: 1000px;
+  height: 425px;
+  display: flex;
+  justify-content: space-between;
+  perspective: 1000px;
+}
 
-    .cardBack {
-      transform: rotateY(0.5turn);
-      font-size: 18px;
-      line-height: 2em;
-      background-color: white;
-      color: #FFE81F;
-      border-radius: 10px;
-      height: 425px;
-    }
+.card {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-      
-    }
+/*
+.card:hover {
+  transform: rotateY(0.5turn);
+}
+*/
 
-      .textDetails {
-        padding: 30px;
-        
-      }
-  
+.card.flipCard {
+  transform: rotateY(-180deg);
+}
+
+.cardSection .card .cardFront,
+.cardSection .card .cardBack {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+}
+
+.cardBack {
+  transform: rotateY(0.5turn);
+  font-size: 18px;
+  line-height: 2em;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  height: 425px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.textDetails {
+  padding: 30px;
+}
