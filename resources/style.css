@@ -33,7 +33,7 @@ a {
 }
 */
 
-.card.flipCard {
+.card.active.cardFlip {
   transform: rotateY(-180deg);
 }
 
