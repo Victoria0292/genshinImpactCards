@@ -14,7 +14,7 @@ body {
     width: 1000px;
     display: flex;
     justify-content: space-between;
-    perspective: 800px;
+    perspective: 1000px;
   }
   
     .card {
@@ -40,14 +40,22 @@ body {
         transition: 1s ease-in-out;
       }
   
-        img {
-          width: 240px;
-          height: 375px;
-          object-fit: cover;
-          border-radius: 5%;
-        }
-  
-        .cardBack {
-          transform: rotateY(0.5turn);
+
+    .cardBack {
+      transform: rotateY(0.5turn);
+      font-size: 18px;
+      line-height: 2em;
+      background-color: white;
+      background-size: cover;
+      color: #FFE81F;
+      border-radius: 10px;
     }
+
+    img {
+      width: 100%; 
+      border-radius: 10px;
+      
+    }
+
+      .textDetails {padding: 30px;}
   
