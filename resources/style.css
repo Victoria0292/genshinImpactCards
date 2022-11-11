@@ -33,6 +33,19 @@ a {
 }
 */
 
+.card1 {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  transition:.5s;  
+  transform: translatey(50px) translatez(-50px);
+}
+.card1:hover{
+  transform: rotatex(-10deg);
+  transform: rotatez(10deg);
+  transition:.5s;
+}
+
 .card.active.cardFlip {
   transform: rotateY(-180deg);
 }
