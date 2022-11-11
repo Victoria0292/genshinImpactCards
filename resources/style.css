@@ -12,6 +12,7 @@ body {
 
   .cardSection {
     width: 1000px;
+    height: 425px;
     display: flex;
     justify-content: space-between;
     perspective: 1000px;
@@ -30,12 +31,11 @@ body {
         transform: rotateY(0.5turn);
       }
   
-      .cardFace {
+      .cardSection .card .cardFront,
+      .cardSection .card .cardBack {
         position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
+        
         backface-visibility: hidden;
         transition: 1s ease-in-out;
       }
@@ -46,16 +46,19 @@ body {
       font-size: 18px;
       line-height: 2em;
       background-color: white;
-      background-size: cover;
       color: #FFE81F;
       border-radius: 10px;
+      height: 425px;
     }
 
     img {
-      width: 100%; 
+      width: 100%;
       border-radius: 10px;
       
     }
 
-      .textDetails {padding: 30px;}
+      .textDetails {
+        padding: 30px;
+        
+      }
   
